@@ -10,7 +10,7 @@ app = Flask(__name__)
 TEMP_RESULTS_DIR = "temp_results"
 os.makedirs(TEMP_RESULTS_DIR, exist_ok=True)
 
-lstm_model = keras.models.load_model('models/model_LSTM.keras')
+lstm_model = keras.models.load_model('models/model_lstm.keras')
 
 @app.route("/")
 def home():
